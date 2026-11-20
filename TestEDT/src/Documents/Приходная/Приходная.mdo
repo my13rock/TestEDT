@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f9e58477-ea40-44d4-b961-e2549da25c18">
+  <producedTypes>
+    <objectType typeId="ce699e7c-c14f-4e45-85fc-bc19f67a295a" valueTypeId="74dc3754-0206-4315-9160-c190468a5e42"/>
+    <refType typeId="0e78c7cb-a6db-4544-af91-fa86bcf36ed5" valueTypeId="2acd847c-bc98-47f5-9509-b0aeb66114a0"/>
+    <selectionType typeId="f224f7d2-74b3-43df-9ca6-758cfb04c080" valueTypeId="d6a6eadc-7ad4-45cc-9287-9f4630c743ef"/>
+    <listType typeId="e085a1c3-07b4-41bf-a902-31946da00a69" valueTypeId="02a07b30-499e-47c1-84dd-f975440940b3"/>
+    <managerType typeId="2a1be0a6-c438-49dc-8fa0-f1d71d4576f0" valueTypeId="e6a9b0e6-7576-4f05-998f-f340e7c48d48"/>
+  </producedTypes>
+  <name>Приходная</name>
+  <synonym>
+    <key>ru</key>
+    <value>Приходная</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.Приходная.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.Приходная.Form.ФормаДокумента</defaultObjectForm>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="a70e72bd-38f8-4391-8695-9fb0ebe11637">
+    <name>Склад</name>
+    <synonym>
+      <key>ru</key>
+      <value>Склад</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Склады</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="82508643-5ed2-4bce-b216-30e955dd9013">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="e6655564-8200-48a6-b6ac-f400d45b5c3d">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="9d9c316d-ec3a-44a9-a0db-741367640f5c">
+    <producedTypes>
+      <objectType typeId="c6c030c2-b78c-4186-8473-e6b15c8feed9" valueTypeId="a81e38d3-1371-4b97-bc3e-13460aef121a"/>
+      <rowType typeId="5059c80b-05fb-42e4-be77-d26526eb7384" valueTypeId="f8947148-3e44-4932-873c-3df058c2fabf"/>
+    </producedTypes>
+    <name>Товары</name>
+    <synonym>
+      <key>ru</key>
+      <value>Товары</value>
+    </synonym>
+    <attributes uuid="7ee2b975-4d8d-487d-b440-5bb8f9b1db01">
+      <name>Товар</name>
+      <synonym>
+        <key>ru</key>
+        <value>Товар</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Товары</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <lineNumberLength>9</lineNumberLength>
+  </tabularSections>
+</mdclass:Document>
